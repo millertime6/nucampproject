@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Visit bMore: find a fun time</title>
+
+</head>
+
+<body>
+
+    <header class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                        <img src="images/city.png" style="width:250px;height:150px;" id="city">
+                    <div class="col-4 col-sm-3">
+                        </div>
+                        <div class="col float-right">
+                        <h1>Visit bMore</h1>
+                        <h2>find a fun time</h2>
+                        </div>
+                </div>
+        
+        </header>
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+            <div class="container">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            <div class="collapse navbar-collapse" id="nucampNavbar">
+            <ul class=navbar-nav>
+                <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Explore</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contactus.html"><i class="fa fa-address-card fa-lg"></i> Blog</a></li>
+    
+        </div>
+            </ul>
+            <span class="navbar-text ml-auto">
+                <a data-toggle="modal" data-target="#loginModal">
+                <i class="fa fa-sign-in"></i> Login</a>
+            </span>
+        </nav>
+
+<div class="container content">
+        <div class="row">
+            <div id= "map-card" class="card mt-5 mb-5 col-sm-6 col-md-4 mx-auto" style="width: 18rem;">
+                <div class="img-zoom-container">
+                    <img id="myimage" src="images/baltimore_map.png" class="card-img-top" alt="baltimore map">
+                    <div id="myresult" class="text-center img-zoom-result"></div>
+                </div>
+                    <div class="card-body">
+                    <h2 class="text-center card-title"><strong>Check Out the City!</strong></h2>
+                    <p class="card-text"></p>
+                    <a href="#" class="mx-auto btn btn-primary">Go somewhere</a>
+                    </div>
+            </div>
+
+        <div id="buttonDiv" class="mt-5 col-sm-6 col-md-4 text-center">
+            <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg" id="find-fun">Find Fun</button>
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <button class="btn btn-outline-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick Pick</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Fed Hill</a>
+                            <a class="dropdown-item" href="#">Inner Harbor</a>
+                            <a class="dropdown-item" href="#">Station North</a>
+                            <a class="dropdown-item" href="#">Hampden</a>
+                            <a class="dropdown-item" href="#">Locust Point</a>
+                            <a class="dropdown-item" href="#">Harbor East</a>
+                            <a class="dropdown-item" href="#">Fells Point</a>
+                            <a class="dropdown-item" href="#">Canton</a>
+                            <a class="dropdown-item" href="#">Raven Stadium</a>
+                            <a class="dropdown-item" href="#">Oriole Park</a>
+                            <a class="dropdown-item" href="#">Horseshoe Casino</a>
+
+
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">I'm feeling lucky</a>
+                          </div>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                      </div>
+                    </div>         
+                </div>
+            </div>
+            <div class="mt-5 mx-auto" id="featured-location" class="card" style="width: 12rem;">
+                <h2 id="raven-card-title" class="card-title"><strong>Featured Location</strong></h2>
+                <img src="images/raven_stadium.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Raven Stadium</h5>
+                  <p class="card-text">During football season, the town turns purple. If you're in the area, check out one of the most electric sports stadiums in the country!</p>
+                  <a href="#" class="btn btn-primary">Buy Tickets</a>
+                </div>
+              </div>
+
+        </div>
+
+        <div id="blog" class="card mt-5 mb-5 col-sm-6 col-md-4" style="width: 18rem;">
+                <!-- <img src="" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                    <h2 class="card-title"><strong>Our Blog</strong></h2>
+                    <p class="card-text">Sign up for our blog and get updates on the events in the area!</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-signup-modal-lg">Sign Up!</button>
+
+                    <div class="modal fade bd-signup-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            
+                                <form action="action_page" style="border:1px solid #ccc">
+                                        <div class="container">
+                                          <h1>Sign Up</h1>
+                                          <p>Please fill in this form to create an account.</p>
+                                          <hr>
+                                      
+                                          <label for="email"><b>Email</b></label>
+                                          <input type="text" placeholder="Enter Email" name="email" required>
+                                      
+                                      
+                                          <label>
+                                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                                          </label>
+                                      
+                                          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                                      
+                                          <div class="clearfix">
+                                            <button type="button" class="cancelbtn">Cancel</button>
+                                            <button type="submit" class="signupbtn">Sign Up</button>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</div>
+    
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-sm-2 offset-1">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About</a></li>
+                            <li><a href="#">Explore</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Blog</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="social col-6 col-sm-5 text-center">
+                        <h5>Social</h5>
+                        <a class="zoom btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>&nbsp;
+                        <a class="zoom btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>&nbsp;
+                        <a class="zoom btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>&nbsp;
+                        <a class="zoom btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>&nbsp;
+    
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <i class="fa fa-phone fa-lg text-primary"></i> 1-555-555-1234<br />
+                        <i class="fa fa-envelope-o fa-lg text-primary"></i> info@visitbmore.com
+                    </div>
+               </div>
+            </div>
+        </footer>
+    
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
